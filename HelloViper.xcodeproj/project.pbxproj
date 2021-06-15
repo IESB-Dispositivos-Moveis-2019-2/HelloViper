@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB9F500E26781FE9001FC09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F500D26781FE9001FC09F /* AppDelegate.swift */; };
+		EB9F501726781FEC001FC09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9F501626781FEC001FC09F /* Assets.xcassets */; };
+		EB9F501A26781FEC001FC09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F501826781FEC001FC09F /* LaunchScreen.storyboard */; };
+		EB9F502726782205001FC09F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F502626782205001FC09F /* User.swift */; };
+		EB9F502926782230001FC09F /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F502826782230001FC09F /* LoginClient.swift */; };
+		EB9F502B26782344001FC09F /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F502A26782344001FC09F /* LoginInteractor.swift */; };
+		EB9F502D267825BB001FC09F /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F502C267825BB001FC09F /* LoginPresenter.swift */; };
+		EB9F5030267826A8001FC09F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F502E267826A8001FC09F /* LoginViewController.swift */; };
+		EB9F5031267826A8001FC09F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9F502F267826A8001FC09F /* LoginViewController.xib */; };
+		EB9F503326782D22001FC09F /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F503226782D22001FC09F /* LoginRouter.swift */; };
+		F9B568920A56DF17BC09C6DB /* Pods_HelloViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FB6901CB855BA69B66170E /* Pods_HelloViper.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77FB6901CB855BA69B66170E /* Pods_HelloViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD8EFEDB762E9C6CC6A4B34 /* Pods-HelloViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloViper.release.xcconfig"; path = "Target Support Files/Pods-HelloViper/Pods-HelloViper.release.xcconfig"; sourceTree = "<group>"; };
+		EB9F500A26781FE9001FC09F /* HelloViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9F500D26781FE9001FC09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB9F501626781FEC001FC09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB9F501926781FEC001FC09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB9F501B26781FEC001FC09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9F502626782205001FC09F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB9F502826782230001FC09F /* LoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
+		EB9F502A26782344001FC09F /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		EB9F502C267825BB001FC09F /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		EB9F502E267826A8001FC09F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EB9F502F267826A8001FC09F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		EB9F503226782D22001FC09F /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		F9B7DD1A65AF3E78F234F213 /* Pods-HelloViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloViper.debug.xcconfig"; path = "Target Support Files/Pods-HelloViper/Pods-HelloViper.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB9F500726781FE9001FC09F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B568920A56DF17BC09C6DB /* Pods_HelloViper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A1148506D8CBBFD9E1FA32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77FB6901CB855BA69B66170E /* Pods_HelloViper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A736BD30F948A3AAA4206AF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9B7DD1A65AF3E78F234F213 /* Pods-HelloViper.debug.xcconfig */,
+				CFD8EFEDB762E9C6CC6A4B34 /* Pods-HelloViper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB9F500126781FE9001FC09F = {
+			isa = PBXGroup;
+			children = (
+				EB9F500C26781FE9001FC09F /* HelloViper */,
+				EB9F500B26781FE9001FC09F /* Products */,
+				A736BD30F948A3AAA4206AF1 /* Pods */,
+				12A1148506D8CBBFD9E1FA32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB9F500B26781FE9001FC09F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F500A26781FE9001FC09F /* HelloViper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB9F500C26781FE9001FC09F /* HelloViper */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F5025267821AA001FC09F /* Router */,
+				EB9F5024267821A4001FC09F /* Entity */,
+				EB9F502326782197001FC09F /* Presenter */,
+				EB9F50222678218F001FC09F /* Interactor */,
+				EB9F502126782184001FC09F /* View */,
+				EB9F500D26781FE9001FC09F /* AppDelegate.swift */,
+				EB9F501626781FEC001FC09F /* Assets.xcassets */,
+				EB9F501826781FEC001FC09F /* LaunchScreen.storyboard */,
+				EB9F501B26781FEC001FC09F /* Info.plist */,
+			);
+			path = HelloViper;
+			sourceTree = "<group>";
+		};
+		EB9F502126782184001FC09F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F502E267826A8001FC09F /* LoginViewController.swift */,
+				EB9F502F267826A8001FC09F /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB9F50222678218F001FC09F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F502A26782344001FC09F /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EB9F502326782197001FC09F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F502C267825BB001FC09F /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EB9F5024267821A4001FC09F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F502626782205001FC09F /* User.swift */,
+				EB9F502826782230001FC09F /* LoginClient.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EB9F5025267821AA001FC09F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F503226782D22001FC09F /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB9F500926781FE9001FC09F /* HelloViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9F501E26781FEC001FC09F /* Build configuration list for PBXNativeTarget "HelloViper" */;
+			buildPhases = (
+				A24B7220EAEE87BCD6F3724D /* [CP] Check Pods Manifest.lock */,
+				EB9F500626781FE9001FC09F /* Sources */,
+				EB9F500726781FE9001FC09F /* Frameworks */,
+				EB9F500826781FE9001FC09F /* Resources */,
+				5814736E1C029834676CE88D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloViper;
+			productName = HelloViper;
+			productReference = EB9F500A26781FE9001FC09F /* HelloViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB9F500226781FE9001FC09F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EB9F500926781FE9001FC09F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = EB9F500526781FE9001FC09F /* Build configuration list for PBXProject "HelloViper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB9F500126781FE9001FC09F;
+			productRefGroup = EB9F500B26781FE9001FC09F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB9F500926781FE9001FC09F /* HelloViper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB9F500826781FE9001FC09F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9F501A26781FEC001FC09F /* LaunchScreen.storyboard in Resources */,
+				EB9F501726781FEC001FC09F /* Assets.xcassets in Resources */,
+				EB9F5031267826A8001FC09F /* LoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5814736E1C029834676CE88D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloViper/Pods-HelloViper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloViper/Pods-HelloViper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloViper/Pods-HelloViper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A24B7220EAEE87BCD6F3724D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloViper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB9F500626781FE9001FC09F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9F5030267826A8001FC09F /* LoginViewController.swift in Sources */,
+				EB9F502B26782344001FC09F /* LoginInteractor.swift in Sources */,
+				EB9F502926782230001FC09F /* LoginClient.swift in Sources */,
+				EB9F502726782205001FC09F /* User.swift in Sources */,
+				EB9F500E26781FE9001FC09F /* AppDelegate.swift in Sources */,
+				EB9F503326782D22001FC09F /* LoginRouter.swift in Sources */,
+				EB9F502D267825BB001FC09F /* LoginPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB9F501826781FEC001FC09F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB9F501926781FEC001FC09F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB9F501C26781FEC001FC09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB9F501D26781FEC001FC09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB9F501F26781FEC001FC09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B7DD1A65AF3E78F234F213 /* Pods-HelloViper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRNNBMBSXJ;
+				INFOPLIST_FILE = HelloViper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.iesb.2019-2.HelloViper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB9F502026781FEC001FC09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD8EFEDB762E9C6CC6A4B34 /* Pods-HelloViper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRNNBMBSXJ;
+				INFOPLIST_FILE = HelloViper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.iesb.2019-2.HelloViper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB9F500526781FE9001FC09F /* Build configuration list for PBXProject "HelloViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9F501C26781FEC001FC09F /* Debug */,
+				EB9F501D26781FEC001FC09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9F501E26781FEC001FC09F /* Build configuration list for PBXNativeTarget "HelloViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9F501F26781FEC001FC09F /* Debug */,
+				EB9F502026781FEC001FC09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB9F500226781FE9001FC09F /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_HelloViper {
+  umbrella header "Pods-HelloViper-umbrella.h"
+
+  export *
+  module * { export * }
+}
